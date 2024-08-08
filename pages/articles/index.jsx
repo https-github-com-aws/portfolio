@@ -5,7 +5,7 @@ import Recent 		from '../../components/sections/articles/recent'
 import Color 	from '../../components/utils/page.colors.util'
 
 import colors 		from '../../content/articles/_colors.json'
-import settings 	from '../../content/_settings.json'
+// import settings 	from '../../content/_settings.json'
 
 //
 export default function Articles({ mediumArticles }) {
@@ -25,7 +25,7 @@ export async function getServerSideProps({ res }) {
 		'public, s-maxage=600, stale-while-revalidate=59'
 	)
 
-	console.log(settings.username.medium)
+	// console.log(settings.username.medium)
 
 	const [ mediumRSS ] = await Promise.all( [
 		fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/${settings.username.medium}`),

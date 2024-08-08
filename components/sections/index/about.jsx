@@ -28,33 +28,62 @@ export default function About() {
 		<Section classProp={about.section}>	
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
-					title="About Me"
-					preTitle="Synopsis"
-					subTitle="With a diverse skill set that includes UX design, UI design, full stack development, operational architecture, systems design, photography, and branding, I am a well-rounded digital professional."
+					title="About Us"
+					// preTitle="Synopsis"
+					subTitle="Scurmmer AI is on the way of making project managers life easier."
 				/>
 				<section className={about.content}>
 					<div className={about.image}>
-						<img src="/img/family-photo.jpg" alt="Nelson family photo"/>
+						<img src="/img/family.png" alt="Nelson family photo"/>
 						{/* <Image src="/img/family-photo.jpg" width={600} height={800}/> */}
 					</div>
 					<div className={about.copy} >
 						<CopyBlock 
-							title="Softskills that pay the bills"
+							title="Auto Join Meeting"
 							containerClass={about.container}
 							iconClass={about.icon}
 							icon={[ 'fat', 'ear-listen' ]}
-							copy="In addition to my design and technical expertise—I also have strong leadership, time management, and multitasking skills—honed through my experience as a business owner / managing partner, husband, and father of two. Outside of work, I enjoy staying active through sports such as hockey and snowboarding. I am confident in my ability to bring passion and value to any project."
+							copy="Scrummer will join your meeting automatically once you invite it into your google calender!"
 						/>
-						<BadgesBlock 
-							title="Reasearch and planning" 
+						
+						<CopyBlock 
+							title="Meeting Transcription" 
 							containerClass={about.container}
 							list={methods} 
 							fullContainer="fullContainer"
 							block="methods" 
 							icon="fingerprint"
-							copy="One of my favorite aspects of creating is planning the architecture of a project. From Design Systems to Brand Strategy—I enjoy working with the many touch points of user experience."
+							copy="Scrummer will record the whole conversations during the meeting and it will sent you to your mail after the session."
 							//invertedColor="invertedColor"
-							headerIcon={`${about.icon}`}
+							// headerIcon={`${about.icon}`}
+						/>
+						{/* <CopyBlock 
+							title="Auto Task Assign"
+							containerClass={about.container}
+							iconClass={about.icon}
+							icon={[ 'fat', 'ear-listen' ]}
+							copy="Scrummer will auto assign the tasks from the project through JIRA/ Github"
+						/> */}
+						<CopyBlock 
+							title="Track Progress"
+							containerClass={about.container}
+							iconClass={about.icon}
+							icon={[ 'fat', 'ear-listen' ]}
+							copy="Scrummer will help you to track the progress of your project and will give you plan to accomplish it before the deadline."
+						/>
+						<CopyBlock 
+							title="Language"
+							containerClass={about.container}
+							iconClass={about.icon}
+							icon={[ 'fat', 'ear-listen' ]}
+							copy="Scrummer supports 100+ languages."
+						/>
+						<CopyBlock 
+							title="Easy Integration"
+							containerClass={about.container}
+							iconClass={about.icon}
+							icon={[ 'fat', 'ear-listen' ]}
+							copy="Integrates with your existing tools easily."
 						/>
 					</div>
 				</section>	
